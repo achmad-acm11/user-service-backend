@@ -5,7 +5,7 @@ const usersHandler = require("./handlers/users");
 /* GET users listing. */
 router.get("/", usersHandler.getAll);
 router.get("/:id", usersHandler.getOne);
-router.post("/", usersHandler.register);
+router.post("/register", usersHandler.register);
 router.put("/:id", usersHandler.update);
 router.post("/login", usersHandler.login);
 router.post("/logout", usersHandler.logout);

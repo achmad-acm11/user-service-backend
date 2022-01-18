@@ -19,7 +19,7 @@ app.use(express.static(path.join(__dirname, "public")));
 
 app.use("/", indexRouter);
 app.use("/user", usersRouter);
-app.use("/refresh_token", refreshTokenRouter);
+app.use("/refresh-token", refreshTokenRouter);
 
 app.use(function (req, res, next) {
   const response = apiResponse("Not Found", "error", 404, {

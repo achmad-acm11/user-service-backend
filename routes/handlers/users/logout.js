@@ -13,7 +13,7 @@ module.exports = {
     try {
       const userId = req.body.user_id;
 
-      const user = await User.findByFk(userId);
+      const user = await User.findByPk(userId);
 
       if (!user) {
         return res.sendStatus(
